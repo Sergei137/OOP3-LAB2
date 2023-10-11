@@ -1,6 +1,6 @@
 
 
-public class AAA {
+public class test1 {
     public int LinearFind(int key){
 
 
