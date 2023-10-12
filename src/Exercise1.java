@@ -10,35 +10,18 @@ public class Exercise1 {
         studentList1.add(new Student("Charlie", 18));
         studentList1.add(new Student("Bob", 22));
 
-        // compare by age
-        StudentAgeComparator compareByAge = new StudentAgeComparator();
-        Collections.sort(studentList1, compareByAge);
+        // comparable
+        Collections.sort(studentList1);
+        System.out.println("\nSort student names (alphabetically) using comparable:");
         for (var i: studentList1) {
-            System.out.println(i.name + " " + i.age);
+            System.out.println(i.toString());
         }
 
-        // var s1 = studentList2.get(0);
-        // var s2 = studentList2.get(1);
-        // System.out.println(s1.compareTo(s2));
-
-        // compare by name
-        StudentNameComapartor compareByName = new StudentNameComapartor();
-        Collections.sort(studentList1, compareByName);
+        // comparator
+        Collections.sort(studentList1, new Student("", 0));
+        System.out.println("\nSort student ages (lowest to highest) using comparator:");
         for (var i: studentList1) {
-            System.out.println(i.name + " " + i.age);
+            System.out.println(i.toString());
         }
-
-
-
-
-
-
-
-        // Array
-        // Student[] studentList2 = new Student[3]; 
-        // studentList2[0] = new Student("Alice", 20);
-        // studentList2[1] = new Student("Charlie", 18);
-        // studentList2[2] = new Student("Bob", 22);
-        // StudentAgeComparator.compare(studentList2[0], studentList2[1]);
     }
 }
