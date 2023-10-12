@@ -11,7 +11,7 @@ public class Main {
         int data[] = {1,2,3,4,5,6,7,8,9,10};
         
         // target key
-        int key = 11;
+        int key = 5;
         Exercise2.BinarySearch(data, key);
         
         // Exercise 3
