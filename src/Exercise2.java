@@ -1,6 +1,5 @@
 
 
-
 public class Exercise2 {
     // static binary search method
     public static int BinarySearch(int[] sortedList, int key) {

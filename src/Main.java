@@ -1,20 +1,20 @@
-import java.util.ArrayList;
-import java.util.List;
+// import java.util.ArrayList;
+// import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        // Exercise 1
+        // Exercise 1 - sort students by name and age
         // Exercise1.SortStudents();
 
-        // Exercise 2
+        // Exercise 2 - binary search
         // sorted list of integers
-        int data[] = {1,2,3,4,5,6,7,8,9,10};
+        int sortedList[] = {1,2,3,4,5,6,7,8,9,10};
         
         // target key
         int key = 5;
-        Exercise2.BinarySearch(data, key);
+        Exercise2.BinarySearch(sortedList, key);
         
-        // Exercise 3
+        // Exercise 3 - sort array
         // Exercise3.SortArray();        
     }
 }
