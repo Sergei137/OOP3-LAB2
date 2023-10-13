@@ -2,7 +2,7 @@ import java.util.Collections;
 import java.util.ArrayList;
 
 public class Exercise1 {
-    public static void SortStudents() {
+    public static void sortStudents() {
         
         // array list
         ArrayList<Student> studentList1 = new ArrayList<Student>();

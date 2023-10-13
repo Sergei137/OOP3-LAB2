@@ -6,13 +6,13 @@ public class Main {
 
         // Exercise 1 - Sort students by name and age
         System.out.println("Exercise 1 - Sort students by name and age");
-        Exercise1.SortStudents();
+        Exercise1.sortStudents();
 
         // Exercise 2 - Binary search
         System.out.println("\nExercise 2 - Binary search");
         int sortedList[] = {1,2,3,4,5,6,7,8,9,10}; // sorted list of integers
         int key = 5; // target key
-        Exercise2.BinarySearch(sortedList, key);
+        Exercise2.binarySearch(sortedList, key);
         
         // Exercise 3 - Sort array
         int[] array1 = {3, 8, 2, 6, 10, 1, 7, 4, 5, 9, 0};
@@ -27,16 +27,16 @@ public class Main {
         menuInput1 = scanner.nextInt();
         switch (menuInput1) {
             case 1:
-                Exercise3.BubbleSort(array1);
+                Exercise3.bubbleSort(array1);
                 break;
             case 2:
-                Exercise3.QuickSort(array1);
+                Exercise3.quickSort(array1, 0, array1.length - 1);
                 break;
             case 3:
-                Exercise3.InsertionSort(array1);
+                Exercise3.insertionSort(array1);
                 break;
             case 4:
-                Exercise3.SelectionSort(array1);
+                Exercise3.selectionSort(array1);
                 break;
             default:
                 System.out.println("Invalid input");

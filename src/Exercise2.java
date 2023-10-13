@@ -2,7 +2,7 @@
 
 public class Exercise2 {
     // static binary search method
-    public static int BinarySearch(int[] sortedList, int key) {
+    public static int binarySearch(int[] sortedList, int key) {
         int lower = 0;
         int upper = sortedList.length - 1;
         int mid = (int) Math.floor((lower + upper) / 2);

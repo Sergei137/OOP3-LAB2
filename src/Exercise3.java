@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Exercise3 {
     // bubble sort method - O(n^2)
-    public static void BubbleSort(int[] array){
+    public static void bubbleSort(int[] array){
         System.out.println("Bubble sort");
         int n = array.length; // 11
 
@@ -27,8 +27,8 @@ public class Exercise3 {
         System.out.println("\nSorted array: " + Arrays.toString(array));
     }
 
-    // quick sort method - O(n log n) 
-    public static void QuickSort(int[] array){
+    // quick sort method - O(n^2)
+    public static void quickSort(int[] array, int low, int high){
         System.out.println("Quick sort");
         int n = array.length; // 11
         
@@ -48,7 +48,7 @@ public class Exercise3 {
     }
 
     // insertion sort - O(n^2)
-    public static void InsertionSort(int[] array){
+    public static void insertionSort(int[] array){
         System.out.println("Quick sort");
         int n = array.length; // 11
         
@@ -66,7 +66,7 @@ public class Exercise3 {
     }
 
     // selection sort - O(n^2)
-    public static void SelectionSort(int[] array){
+    public static void selectionSort(int[] array){
         System.out.println("Quick sort");
         int n = array.length; // 11
         
