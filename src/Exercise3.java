@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exercise3 {
@@ -23,16 +22,16 @@ public class Exercise3 {
         // switch case menu for sorting algorithms
         switch (menuInput1) {
             case 1:
-                BubbleSortClass.bsc(array1);
+                BubbleSortClass.main(array1);
                 break;
             case 2:
-                QuickSortClass.qsc(array1);
+                QuickSortClass.main(array1);
                 break;
             case 3:
-                InsertionSortClass.isc(array1);
+                InsertionSortClass.main(array1);
                 break;
             case 4:
-                SelectionSortClass.ssc(array1);
+                SelectionSortClass.main(array1);
                 break;
             default:
                 System.out.println("Invalid input");

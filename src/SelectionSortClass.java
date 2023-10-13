@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class SelectionSortClass {
-    public static void ssc(int[] array){
+    public static void main(int[] array){
         System.out.println("Selection sort");
 
         // find length of array and set it to n
@@ -13,14 +13,14 @@ public class SelectionSortClass {
             System.out.print(array[i] + " ");
         }
 
-        // selection sort
+        // selection sort - O(n^2)
         selectionSort(array, n);
 
         // print sorted array
         System.out.println("\nSorted array: " + Arrays.toString(array));
     }
 
-    // selection sort - O(n^2)
+    // selection sort
     public static void selectionSort(int[] array, int n){
         
     }
