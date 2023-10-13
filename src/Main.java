@@ -14,34 +14,8 @@ public class Main {
         int key = 5; // target key
         Exercise2.binarySearch(sortedList, key);
         
-        // Exercise 3 - Sort array
-        int[] array1 = {3, 8, 2, 6, 10, 1, 7, 4, 5, 9, 0};
-        System.out.println("\nExercise 3 - Sort array");
-        System.out.println("Select a sorting algorithm: ");
-        System.out.println("1. Bubble sort");
-        System.out.println("2. Quick sort");
-        System.out.println("3. Insertion sort");
-        System.out.println("4. Selection sort");
-        System.out.print("Input: ");
-        int menuInput1 = 0;
-        menuInput1 = scanner.nextInt();
-        switch (menuInput1) {
-            case 1:
-                Exercise3.bubbleSort(array1);
-                break;
-            case 2:
-                Exercise3.quickSort(array1, 0, array1.length - 1);
-                break;
-            case 3:
-                Exercise3.insertionSort(array1);
-                break;
-            case 4:
-                Exercise3.selectionSort(array1);
-                break;
-            default:
-                System.out.println("Invalid input");
-                break;
-        }
+        // Exercise 3 - Sorting Algorithms
+        Exercise3.ex3Menu(scanner);
 
         // end onf program
         scanner.close();
