@@ -9,6 +9,7 @@ public class Exercise1 {
         studentList1.add(new Student("Alice", 20));
         studentList1.add(new Student("Charlie", 18));
         studentList1.add(new Student("Bob", 22));
+        studentList1.add(new Student("Eve", 20));
 
         // comparable
         Collections.sort(studentList1);
