@@ -16,12 +16,17 @@ public class QuickSortClass {
         for (int i = 0; i < n; i++) {
             System.out.print(array[i] + " ");
         }
+        System.out.println();
         
         // quick sort - O(n^2)
         quickSort(array, lower, upper);
 
         // print sorted array
-        System.out.println("\nSorted array: " + Arrays.toString(array));
+        System.out.print("Sorted array: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
     }
 
     // quick sort method
