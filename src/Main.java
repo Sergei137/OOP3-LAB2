@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         // Exercise 1 - Sort students by name and age
@@ -15,6 +15,7 @@ public class Main {
         Exercise2.BinarySearch(sortedList, key);
         
         // Exercise 3 - Sort array
+        int[] array1 = {1, 2, 3, 4, 5, 6, 7, 8};
         System.out.println("\nExercise 3 - Sort array");
         System.out.println("Select a sorting algorithm: ");
         System.out.println("1. Bubble sort");
@@ -26,22 +27,25 @@ public class Main {
         menuInput1 = scanner.nextInt();
         switch (menuInput1) {
             case 1:
-                Exercise3.BubbleSort();
+                Exercise3.BubbleSort(array1);
                 break;
             case 2:
-                Exercise3.QuickSort();
+                Exercise3.QuickSort(array1);
                 break;
             case 3:
-                Exercise3.InsertionSort();
+                Exercise3.InsertionSort(array1);
                 break;
             case 4:
-                Exercise3.SelectionSort();
+                Exercise3.SelectionSort(array1);
                 break;
             default:
                 System.out.println("Invalid input");
                 break;
         }
 
-        // Exercise3.SortArray();        
-    }
+        // end onf program
+        scanner.close();
+        System.out.println("Program terminated.");
+    }        
 }
+
