@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class QuickSortClass {
     public static void main(int[] array){
-        System.out.println("Quick sort");
+        System.out.println("\nQuick sort");
 
         // find length of array and set it to n
         int n = array.length; // n = 11

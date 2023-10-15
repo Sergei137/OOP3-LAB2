@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class SelectionSortClass {
     public static void main(int[] array){
-        System.out.println("Selection sort");
+        System.out.println("\nSelection sort");
 
         // find length of array and set it to n
         int n = array.length; // 11

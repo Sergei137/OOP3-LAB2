@@ -2,7 +2,7 @@
 
 public class BubbleSortClass {
     public static void main(int[] array){
-        System.out.println("Bubble sort");
+        System.out.println("\nBubble sort");
 
         // find length of array and set it to n
         int n = array.length; // n = 11

@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class InsertionSortClass {
     public static void main(int[] array){
-        System.out.println("Insertion sort");
+        System.out.println("\nInsertion sort");
 
         // find length of array and set it to n
         int n = array.length; // 11

@@ -5,7 +5,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Exercise 1 - Sort students by name and age
-        System.out.println("Exercise 1 - Sort students by name and age");
+        System.out.println("\nExercise 1 - Sort students by name and age");
         Exercise1.sortStudents();
 
         // Exercise 2 - Binary search
@@ -19,6 +19,6 @@ public class Main {
 
         // end onf program
         scanner.close();
-        System.out.println("Program terminated.");
+        System.out.println("\nProgram terminated.");
     }        
 }
