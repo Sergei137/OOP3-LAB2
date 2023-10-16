@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)){
+
         // Exercise 1 - Sort students by name and age
         System.out.println("\nExercise 1 - Sort students by name and age");
         Exercise1.sortStudents();
@@ -20,7 +21,5 @@ public class Main {
         scanner.close();
         System.out.println("\nProgram terminated.");
         }
-
-        
     }        
 }
