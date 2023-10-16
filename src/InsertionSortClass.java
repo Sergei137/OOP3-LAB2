@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 
 public class InsertionSortClass {
     public static void main(int[] array){
@@ -25,20 +25,22 @@ public class InsertionSortClass {
         System.out.println();
     }
 
-    // insertion sort
+    // insertion sort method
     public static void insertionSort(int[] array, int n){
-        
         for (int i = 0; i < n; i++){
-            for (int j = 1; j < n; j++) {
-                
+            
+            // set key to array[i]
+            int key = array[i];
+            
+            // move array elements that are greater than the key to one position ahead of their current position
+            int j = i - 1;
+            while (j >= 0 && array[j] > key){
+                array[j + 1] = array[j];
+                j--;
             }
-        }
-        
-    }
 
-    public static void swap(int[] array, int i, int j){
-        int temp = array[i];
-        array[i]  = array[j];
-        array[j]  = temp;
+            // insert the key into the array
+            array[j + 1] = key;
+        }
     }
 }

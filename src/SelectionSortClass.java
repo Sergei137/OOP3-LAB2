@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 
 public class SelectionSortClass {
     public static void main(int[] array){
@@ -27,6 +27,20 @@ public class SelectionSortClass {
 
     // selection sort
     public static void selectionSort(int[] array, int n){
-        
+        for (int i = 0; i < n - 1; i++){
+            int minIndex = i;
+
+            // find the minimum element in the unsorted array
+            for (int j = i + 1; j < n; j++){
+                if (array[j] < array[minIndex]){
+                    minIndex = j;
+                }
+            }
+
+            // swap the minimum element with the first element
+            int temp = array[i];
+            array[i] = array[minIndex];
+            array[minIndex] = temp;
+        }
     }
 }
